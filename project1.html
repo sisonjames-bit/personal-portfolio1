@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Record System | Projects | James Sison</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">James Sison</div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html" class="contact-btn">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== PROJECT HERO ===== -->
+  <section class="project-hero" style="background-image: url('https://cdn.pixabay.com/photo/2018/01/18/07/39/computer-3088958_1280.jpg');">
+    <div class="overlay">
+      <h1>Student Record System</h1>
+      <p>A complete C-based system for managing student records, attendance, and grades efficiently.</p>
+    </div>
+  </section>
+
+  <!-- ===== PROJECT DETAILS ===== -->
+  <section class="project-details">
+    <div class="project-container">
+      <h2>Overview</h2>
+      <p>
+        The <b>Student Record System</b> is a console-based application written in the C programming language. 
+        It allows users to input, manage, and organize student data while providing automated sorting, 
+        attendance tracking, and grade computation features. The system uses structured programming principles 
+        and validation to ensure accurate and efficient record handling.
+      </p>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li>✅ Add, search, and delete student records with data validation.</li>
+        <li>📋 Record and calculate student attendance with automatic percentage computation.</li>
+        <li>🎓 Input multiple grades and calculate averages automatically.</li>
+        <li>🔍 Sort students alphabetically for organized display.</li>
+        <li>🧠 Uses <code>struct</code> and <code>functions</code> for modular design.</li>
+      </ul>
+
+      <h2>Technologies Used</h2>
+      <div class="tech-stack">
+        <span>C Language</span>
+        <span>Data Structures</span>
+        <span>Functions & Validation</span>
+        <span>Code::Blocks IDE</span>
+        <span>Console UI</span>
+      </div>
+
+      <h2>Program Preview</h2>
+      <div class="gallery">
+        <img src="css104code.png" alt="Student Record System Code">
+        <img src="css104output.png" alt="Program Output Sample">
+      </div>
+
+      <h2>Sample Code</h2>
+      <pre class="code-snippet">
+<code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#include &lt;ctype.h&gt;
+
+#define MAX_STUDENTS 100
+#define MAX_GRADES 5
+
+typedef struct {
+    char name[50];
+    int age;
+    char course[20];
+    int year;
+    int present;
+    int absent;
+    float attendancePercent;
+    float grades[MAX_GRADES];
+    float average;
+} Student;
+</code>
+      </pre>
+
+      <div class="project-footer">
+        <a href="projects.html" class="btn-primary">← Back to Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 James Sison. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
